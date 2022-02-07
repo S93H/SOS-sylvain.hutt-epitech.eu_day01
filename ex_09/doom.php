@@ -12,7 +12,5 @@ function draw_triangle($size) {
         }
         echo "\n";
     }
-    
-    
 
 }

@@ -9,8 +9,13 @@ function my_calc($nb_a, $operator, $nb_b) {
             echo "$nb_a" - "$nb_b";
             break;
         case "/" :
-            echo "$nb_a" / "$nb_b";
-            break;
+            if ($nb_b == 0){
+                echo 0;
+            } else {
+                echo "$nb_a" / "$nb_b";
+                break;
+            }
+            
         case "%" :
             echo "$nb_a" % "$nb_b";
             break;
